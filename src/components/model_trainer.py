@@ -68,7 +68,10 @@ class ModelTrainer:
                     'n_estimators': [8, 16, 32, 64, 128, 256]
                 },
                 "Linear Regressor": {},
-                "K-Neighbors Classifier": {},
+                "K-Neighbors Classifier": {
+                    'n_neighbors': [5,10,15],
+                    'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
+                },
                 "XGBClassifier": {
                     'learning_rate': [.1, .01, .05, .001],
                     'n_estimators': [8, 16, 32, 64, 128, 256]
